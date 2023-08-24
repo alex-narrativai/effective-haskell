@@ -1,0 +1,26 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/haskell:2": {
+			"installHLS": true,
+			"downgradeGhcToSupportHls": true,
+			"installStack": true,
+			"installStackGHCupHook": true,
+			"adjustBash": true,
+			"ghcVersion": "recommended",
+			"cabalVersion": "recommended",
+			"globalPackages": "hlint hspec pandoc"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"haskell.haskell",
+				"phoityne.phoityne-vscode",
+				"jcanero.hoogle-vscode",
+				"adamcowley.neo4j-vscode",
+				"jakeboone02.cypher-query-language"
+			]
+		}
+	}
+}
